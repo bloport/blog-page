@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="ILHO BLOG" />
+
+        <!-- Open Graph 메타 태그 -->
+        <meta property="og:title" content="ILHO BLOG" />
+        <meta property="og:description" content="일호와 함께 춤을" />
+        <meta property="og:url" content="https://blog.bloport.com" />
+        <meta
+            property="og:image"
+            content="https://jvfbgigrcyoyywxdepzy.supabase.co/storage/v1/object/public/bloport/posts/profile.png"
+        />
+        <meta property="og:type" content="website" />
+        <title>ILHO BLOG</title>
+        <script>
+            // 현재 경로와 쿼리 스트링을 유지하면서 index.html로 리디렉션
+            const pathname = window.location.pathname + window.location.search
+            window.history.replaceState({}, "", pathname)
+            window.location.replace("/?" + window.location.search.substring(1))
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <style>
+            /* 예: 전체 화면 높이를 사용하는 요소에 적용 */
+            .full-height-element {
+                height: calc(var(--vh, 1vh) * 100);
+            }
+        </style>
+    </body>
+</html>
