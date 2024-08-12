@@ -24,7 +24,7 @@
             // 기본 경로가 '/'가 아닌 경우를 대비해 현재 경로를 유지하여 리디렉션
             if (window.location.pathname !== '/') {
                 window.history.replaceState({}, '', fullPath);
-                window.location.replace('/' + fullPath.substring(1));
+                window.location.replace('/?' + fullPath.substring(1));
             }
         </script>
     </head>
